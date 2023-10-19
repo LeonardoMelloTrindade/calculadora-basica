@@ -12,8 +12,8 @@ body {
 /*===== INICIO HEADER E INPUT DA CALCULADORA =====*/
 
 header {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    justify-items: center;
 }
 
 .input-calculadora {
@@ -46,13 +46,30 @@ header {
 
 .container-botoes {
     display: grid;
-    grid-template-columns: 500px 160px;
-    justify-items: center;
+    grid-template-columns: repeat(2, 340px);
 }
 
 article {
     display: grid;
     grid-template-columns: repeat(3, 150px);
+    column-gap: 10px;
+}
+
+div {
+    display: grid;
+    row-gap: 10px;
+}
+
+aside {
+    display: grid;
+    grid-template-rows: 95px 95px 340px;
+    justify-items: flex-end;
+    row-gap: 10px;
+}
+
+.container-zero {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 /*===== FIM CONTAINER BOTÕES DA CALCULADORA =====*/
@@ -61,20 +78,18 @@ article {
 /*===== INICIO BOTÕES DA CALCULADORA =====*/
 
 section {
-    width: 150px;
-    height: 95px;
     font-size: 2.1em;
     line-height: 95px;
     text-align: center;
     border: 1px solid rgb(255, 255, 255);
-    margin: 5px 20px;
 }
 
-aside section:nth-child(1) {
-    margin-bottom: 10px;
+aside section:nth-child(1), aside section:nth-child(2) {
+    height: 95px;
 }
-aside section:nth-child(2) {
-    margin-bottom: 10px;
+
+aside section {
+    width: 148px;
 }
 
 /*===== FIM BOTÕES DA CALCULADORA =====*/
