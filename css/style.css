@@ -46,13 +46,57 @@ header {
 
 .container-botoes {
     display: grid;
-    grid-template-columns: 500px 160px;
+    grid-template-columns: 3fr 1fr;
     justify-items: center;
 }
 
 article {
     display: grid;
     grid-template-columns: repeat(3, 150px);
+    column-gap: 20px;
+}
+
+.last-article {
+    display: grid;
+    grid: 
+     "ponto zero zero" 2fr
+    ;
+}
+
+.ponto {
+    grid-area: ponto;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+aside section {
+    width: 150px;
+    
+}
+
+aside {
+    display: grid;
+    grid: 
+     "subtracao" 1fr
+     "adicao"  2fr
+     "adicao" 
+     "igual" 1.7fr
+     "igual"
+    ;
+}
+
+.subtracao {
+    grid-area: subtracao;
+}
+
+.adicao {
+    grid-area: adicao;
+}
+
+.igual {
+    grid-area: igual;
 }
 
 /*===== FIM CONTAINER BOTÕES DA CALCULADORA =====*/
@@ -61,13 +105,11 @@ article {
 /*===== INICIO BOTÕES DA CALCULADORA =====*/
 
 section {
-    width: 150px;
-    height: 95px;
     font-size: 2.1em;
     line-height: 95px;
     text-align: center;
     border: 1px solid rgb(255, 255, 255);
-    margin: 5px 20px;
+    margin: 5px 0;
 }
 
 aside section:nth-child(1) {
