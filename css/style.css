@@ -110,12 +110,16 @@ section {
     text-align: center;
     margin: 5px 0;
     cursor: pointer;
+    color: #000;
 }
 
 section:active {
     transform: scale(0.8);
 }
 
+#on-off {
+    color: #fff;
+}
 
 
 /*===== FIM BOTÕES DA CALCULADORA =====*/

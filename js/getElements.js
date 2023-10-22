@@ -1,5 +1,5 @@
 export default class GetsElements {
   btnCalculator = document.querySelectorAll("section");
-  input = document.getElementsByName("input");
+  input = document.querySelector("#input-calculadora");
   btnOnOff = document.getElementById("on-off");
 }
