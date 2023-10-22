@@ -72,7 +72,7 @@ article {
 }
 
 aside section {
-    width: 150px;
+    width: 145px;
     
 }
 
@@ -108,16 +108,19 @@ section {
     font-size: 2.1em;
     line-height: 95px;
     text-align: center;
-    border: 1px solid rgb(255, 255, 255);
     margin: 5px 0;
+    cursor: pointer;
+    color: #000;
 }
 
-aside section:nth-child(1) {
-    margin-bottom: 10px;
+section:active {
+    transform: scale(0.8);
 }
-aside section:nth-child(2) {
-    margin-bottom: 10px;
+
+#on-off {
+    color: #fff;
 }
+
 
 /*===== FIM BOTÕES DA CALCULADORA =====*/
 
