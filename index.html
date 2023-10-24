@@ -8,12 +8,13 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <script type="module" src="./js/index.js" defer></script>
     <script type="module" src="./js/changeColorBtn.js" defer></script>
+    <script type="module" src="./js/getInputValue.js" defer></script>
   </head>
   <body>
     <main class="container">
       <!-- INICIO CONTAINER PRNCIPAL -->
       <header>
-        <input type="text" class="input-calculadora"/>
+        <input type="text" class="input-calculadora" />
       </header>
 
       <main class="container-botoes">
@@ -21,38 +22,38 @@
         <div>
           <article>
             <section id="on-off">On/Off</section>
-            <section>*</section>
+            <section onclick="">*</section>
             <section>/</section>
           </article>
 
           <article>
-            <section>7</section>
-            <section>8</section>
-            <section>9</section>
+            <section onclick="pegandoNumeros(7)">7</section>
+            <section onclick="pegandoNumeros(8)">8</section>
+            <section onclick="pegandoNumeros(9)">9</section>
           </article>
 
           <article>
-            <section>4</section>
-            <section>5</section>
-            <section>6</section>
+            <section onclick="pegandoNumeros(4)">4</section>
+            <section onclick="pegandoNumeros(5)">5</section>
+            <section onclick="pegandoNumeros(6)">6</section>
           </article>
 
           <article>
-            <section>1</section>
-            <section>2</section>
-            <section>3</section>
+            <section onclick="pegandoNumeros(1)">1</section>
+            <section onclick="pegandoNumeros(2)">2</section>
+            <section onclick="pegandoNumeros(3)">3</section>
           </article>
 
           <article class="last-article">
             <section class="ponto">.</section>
-            <section class="zero">0</section>
+            <section onclick="pegandoNumeros(0)" class="zero">0</section>
           </article>
         </div>
 
         <aside>
           <section class="subtracao">-</section>
           <section class="adicao">+</section>
-          <section class="igual"><=</section>
+          <section class="igual" id="resultado"><=</section>
         </aside>
       </main>
       <!-- FIM CONTAINER BOTÕES DA CALCULADORA -->

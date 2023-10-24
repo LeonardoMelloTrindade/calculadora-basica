@@ -2,7 +2,6 @@ import GetsElements from "./getElements.js";
 
 const getElements = new GetsElements();
 const containerButton = getElements.btnCalculator;
-const input = getElements.input;
 let intervalID;
 
 const generateColorRandom = () => {
@@ -27,7 +26,6 @@ export default class ServiceBtn {
   };
   turningsOffColors = () => {
     clearInterval(intervalID);
-    // document.getElementById("input-calculadora").disabled = false;
     for (let index = 0; index < containerButton.length; index++) {
       containerButton[index].style.boxShadow = "none";
       if (index == 0) {
